@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webix Studio – Design, Numérique & Création Personnalisée</title>
+    <!-- Google Fonts (meilleure pratique de le mettre ici) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon (exemple, remplace par ton vrai favicon) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">
+                    <!-- Le style du logo a été déplacé dans le CSS via .logo-text -->
+                    <span class="logo-text">WEB<span class="logo-text-alt">IX</span></span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#method">Méthode</a></li>
+                    <li><a href="#portfolio">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="burger-menu" id="burger-menu" aria-label="Ouvrir le menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate__animated animate__fadeInUp">Webix Studio</h1>
+                <p class="slogan animate__animated animate__fadeIn animate__delay-1s">L’Art du Design, du Numérique et de la Création Personnalisée</p>
+                <p class="animate__animated animate__fadeIn animate__delay-2s">Nous aidons particuliers, startups et entreprises à construire une image forte grâce à des services visuels et digitaux sur mesure.</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn btn-primary animate__animated animate__fadeIn animate__delay-3s">
+                        Découvrir nos services <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary animate__animated animate__fadeIn animate__delay-3s">
+                        Discutons projet <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Qui sommes-nous ?) -->
+    <section id="about" class="section-about">
+        <div class="container">
+            <div class="section-title">
+                <h2>🎯 Qui sommes-nous ?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <p><strong>Webix Studio</strong> est un studio créatif moderne basé à Abidjan, spécialisé dans la conception graphique, la création de contenus numériques, le développement web et le design visuel. Pensé comme un espace de créativité, d’innovation et de solutions numériques, Webix est bien plus qu’un simple nom : c’est une vision, un style, un savoir-faire.</p>
+                    <p>Notre mission est claire : aider les particuliers, startups, entrepreneurs et entreprises à construire une image forte et professionnelle à travers des services visuels et digitaux sur mesure.</p>
+                </div>
+                <!-- Tu pourrais ajouter une image ou illustration ici -->
+                <!-- <div class="about-image animate-on-scroll">
+                    <img src="path/to/your/about-image.jpg" alt="Webix Studio - Espace créatif">
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Nos domaines d’expertise) -->
+    <section id="services" class="section-services">
+        <div class="container">
+            <div class="section-title">
+                <h2>💼 Nos Domaines d’Expertise</h2>
+                <p>Des solutions créatives sur mesure pour votre communication</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-palette"></i></div> <!-- Icône changée -->
+                        <h3>🎨 Design Graphique</h3>
+                        <p>Logos, affiches, flyers, cartes de visite, identité visuelle complète. Nous concevons des visuels qui captivent et renforcent votre marque.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.2s">
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div> <!-- Icône changée -->
+                        <h3>💻 Développement Web</h3>
+                        <p>Sites HTML/CSS/JS 100% personnalisés, performants, modernes et responsives. Intégration, SEO, hébergement et accompagnement.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.4s">
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-photo-video"></i></div> <!-- Icône changée -->
+                        <h3>📹 Création de Contenu Multimédia</h3>
+                        <p>Vidéos publicitaires animées (motion design), présentations, bannières pour réseaux sociaux, mini vidéos explicatives.</p>
+                    </div>
+                </div>
+
+                <div class="service-card animate-on-scroll" style="transition-delay: 0.6s">
+                    <div class="service-content">
+                        <div class="service-icon"><i class="fas fa-users-cog"></i></div> <!-- Nouvelle icône -->
+                        <h3>📱 Identité Numérique & Accompagnement</h3>
+                        <p>Création de pages professionnelles, refonte d'identité visuelle, suivi technique et mises à jour régulières pour votre présence en ligne.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Section (Notre méthode de travail) -->
+    <section id="method" class="section-method">
+        <div class="container">
+            <div class="section-title">
+                <h2>🚀 Notre Méthode de Travail</h2>
+                <p>Dialogue, écoute et personnalisation sont au cœur de chaque projet.</p>
+            </div>
+            <div class="method-steps">
+                <div class="method-step animate-on-scroll">
+                    <div class="step-number">1</div>
+                    <h4>Écoute et Brief</h4>
+                    <p>Compréhension de vos besoins, attentes et publics cibles.</p>
+                </div>
+                <div class="method-step animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="step-number">2</div>
+                    <h4>Recherche & Inspiration</h4>
+                    <p>Benchmark visuel et stratégie de différenciation.</p>
+                </div>
+                <div class="method-step animate-on-scroll" style="transition-delay: 0.4s;">
+                    <div class="step-number">3</div>
+                    <h4>Conception / Développement</h4>
+                    <p>Travail créatif et technique sur mesure.</p>
+                </div>
+                <div class="method-step animate-on-scroll" style="transition-delay: 0.6s;">
+                    <div class="step-number">4</div>
+                    <h4>Révisions et Validation</h4>
+                    <p>Retours client, ajustements et finalisation.</p>
+                </div>
+                <div class="method-step animate-on-scroll" style="transition-delay: 0.8s;">
+                    <div class="step-number">5</div>
+                    <h4>Livraison & Suivi</h4>
+                    <p>Remise des livrables et support technique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section (Pourquoi choisir Webix Studio ?) -->
+    <section id="why-us" class="section-why-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>🤝 Pourquoi Choisir Webix Studio ?</h2>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-us-item animate-on-scroll">
+                    <div class="why-us-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h4>Créativité</h4>
+                    <p>Chaque design est pensé pour refléter votre singularité.</p>
+                </div>
+                <div class="why-us-item animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="why-us-icon"><i class="fas fa-briefcase"></i></div>
+                    <h4>Professionnalisme</h4>
+                    <p>Respect des délais, des attentes et des standards.</p>
+                </div>
+                <div class="why-us-item animate-on-scroll" style="transition-delay: 0.4s;">
+                    <div class="why-us-icon"><i class="fas fa-cogs"></i></div>
+                    <h4>Polyvalence</h4>
+                    <p>Design, développement, contenu – tout au même endroit.</p>
+                </div>
+                <div class="why-us-item animate-on-scroll" style="transition-delay: 0.6s;">
+                    <div class="why-us-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h4>Accessibilité</h4>
+                    <p>Services de qualité adaptés à votre budget.</p>
+                </div>
+                <div class="why-us-item animate-on-scroll" style="transition-delay: 0.8s;">
+                    <div class="why-us-icon"><i class="fas fa-heart"></i></div>
+                    <h4>Passion</h4>
+                    <p>Nous aimons ce que nous faisons, et cela se voit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section-portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Quelques exemples de projets qui illustrent notre savoir-faire</h2>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item animate-on-scroll">
+                    <img src="pp.jpg" alt="Affiche Gala Dinner Webix Studio" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Design Affiche</span>
+                        <h3>Gala Dinner Event</h3>
+                        <p>Conception d'affiche élégante pour un événementiel.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item animate-on-scroll" style="transition-delay: 0.2s">
+                    <img src="logo.png" alt="CV Professionnel Webix Studio" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Design CV</span>
+                        <h3>CV Cadre Dirigeant</h3>
+                        <p>Mise en page moderne et impactante pour profil executive.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item animate-on-scroll" style="transition-delay: 0.4s">
+                    <img src="responsive.avif" alt="Site Web Dashboard Webix Studio" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Développement Web</span>
+                        <h3>Dashboard Analytique</h3>
+                        <p>Interface de visualisation de données sur mesure.</p>
+                    </div>
+                </div>
+                <!-- Ajoute plus d'items si tu en as, en utilisant du contenu de ton texte -->
+                 <div class="portfolio-item animate-on-scroll" style="transition-delay: 0.6s">
+                    <img src="plp.png" alt="Création Logo Webix Studio" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-category">Logo & Branding</span>
+                        <h3>Identité de Marque Startup</h3>
+                        <p>Création de logo et charte graphique pour jeune entreprise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section (Optionnel, mais bon à avoir) -->
+    <section id="tech" class="section-tech">
+        <div class="container">
+            <div class="section-title">
+                <h2>🛠️ Technologies Utilisées</h2>
+            </div>
+            <div class="tech-icons">
+                <div class="tech-icon animate-on-scroll" title="Photoshop"><i class="fab fa-adobe"></i> Ps</div>
+                <div class="tech-icon animate-on-scroll" style="transition-delay: 0.1s;" title="Illustrator"><i class="fab fa-adobe"></i> Ai</div>
+                <div class="tech-icon animate-on-scroll" style="transition-delay: 0.2s;" title="Figma"><i class="fab fa-figma"></i></div>
+                <div class="tech-icon animate-on-scroll" style="transition-delay: 0.3s;" title="Canva"><i class="fas fa-c"></i></div> <!-- Simple C pour Canva -->
+                <div class="tech-icon animate-on-scroll" style="transition-delay: 0.4s;" title="HTML5"><i class="fab fa-html5"></i></div>
+                <div class="tech-icon animate-on-scroll" style="transition-delay: 0.5s;" title="CSS3"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech-icon animate-on-scroll" style="transition-delay: 0.6s;" title="JavaScript"><i class="fab fa-js-square"></i></div>
+                <div class="tech-icon animate-on-scroll" style="transition-delay: 0.7s;" title="PHP"><i class="fab fa-php"></i></div>
+                <!-- Tu peux ajouter d'autres icônes pour Animaker, CapCut etc. si tu trouves des icônes adaptées ou utilises du texte -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section id="faq" class="section-faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Questions Fréquentes</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Comment puis-je commander un service ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Vous pouvez nous contacter directement via le formulaire sur ce site, par email à <strong>webixstudioproduction@gmail.com</strong> ou par téléphone au <strong>05 95 46 6446</strong>. Nous discuterons de vos besoins pour vous proposer la meilleure solution.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quels types de projets réalisez-vous ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nous couvrons un large éventail de besoins : design graphique (logos, affiches, etc.), développement de sites web (vitrines, plateformes sur mesure), création de contenu multimédia (vidéos, présentations) et accompagnement pour votre identité numérique.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quels sont vos délais de livraison ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Les délais varient en fonction de la complexité du projet. Après avoir défini ensemble vos besoins, nous vous fournirons une estimation précise. Nous nous engageons à respecter les délais convenus.</p>
+                    </div>
+                </div>
+                 <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Travaillez-vous avec des clients hors d'Abidjan ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolument ! Bien que basés à Abidjan, nous collaborons avec des clients partout en Côte d'Ivoire et à l'international grâce aux outils de communication numérique.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>📩 Nous Contacter</h2>
+                <p>Envie de collaborer ou d’en savoir plus ? Donnons forme à vos idées !</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Informations de contact</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:webixstudio@gmail.com">webixstudioproduction@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+2250595466446">05 95 46 64 46</a></p>
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links-contact">
+                        <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container animate-on-scroll" style="transition-delay: 0.2s;">
+                    <h3>Envoyez-nous un message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="projectType" name="projectType" class="form-control">
+                                <option value="" disabled selected>Type de projet</option>
+                                <option value="Design Graphique">Design Graphique (Affiche, Print)</option>
+                                <option value="Developpement Web">Développement Web</option>
+                                <option value="Contenu Multimedia">Contenu Multimédia</option>
+                                <option value="Identite Numerique">Identité Numérique</option>
+                                <option value="Design CV">Design de CV</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="number" name="number" class="form-control" placeholder="Votre Numéro de téléphone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-control" placeholder="Décrivez votre projet..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.2rem;">
+                            Envoyer le message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <span class="logo-text footer-logo">WEB<span class="logo-text-alt">IX</span></span>
+                    <p>Webix Studio – L’Art du Design, du Numérique et de la Création Personnalisée. Transformons vos projets en visuels percutants et expériences mémorables.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Accueil</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#method">Méthode</a></li>
+                        <li><a href="#portfolio">Réalisations</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contactez-nous</h3>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:webixstudio@gmail.com" class="footer-contact-link">webixstudioproduction@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+2250595466446" class="footer-contact-link">05 95 46 64 46</a></p>
+
+                    <p>disponible pour projets locaux et internationaux.</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <!-- Mettre l'année en cours dynamiquement avec JS si tu veux, ou la changer manuellement -->
+                <p>© <span id="currentYear">2025</span> Webix Studio. Tous droits réservés. | Conçu par Webix-studio</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton Retour en Haut -->
+    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <!-- Dans le <head> ou avant la fermeture du </body> -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+emailjs.init("fJhI7C1Oj6yo6aikQ"); //  User ID API Keys
+</script>
+</body>
+</html>
