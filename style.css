@@ -833,7 +833,7 @@ footer {
     background: var(--pure-white);
 }
 .footer-column p {
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
     margin-bottom: 1.5rem;
 }
 .footer-logo { /* Style déjà défini au début, mais s'assure qu'il est bien stylé ici aussi */
@@ -853,7 +853,8 @@ ul.footer-links li {
     margin-bottom: 0.5rem;
 }
 ul.footer-links li a{
-    color: var(--off-white);
+    color: white;
+    text-transform: none;
     text-decoration: none;
     transition: color 0.3s ease;
 }
